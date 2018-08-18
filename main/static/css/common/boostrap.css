@@ -1,0 +1,21 @@
+.btn{
+	   padding: 6px 30px;
+	    border-radius: 2px;
+}
+.btn.btn-primary{
+	  background-color: #2780E3;
+  border-color: #1872D5;
+}
+.btn.btn-primary:hover,.btn.btn-primary:active{
+	color: #FFF;
+  background-color: #176FD2;
+  border-color: #176FD2;
+}
+
+.form-control{
+    border-radius: 2px;
+}
+
+.modal{
+	z-index: 3000;
+}

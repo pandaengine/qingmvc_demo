@@ -1,0 +1,16 @@
+vendor
+.git
+!.gitignore
+!.htaccess
+~*
+*-off*
+*副本*
+
+composer.lock
+*.lock
+
+deployment.properties
+*.properties
+.buildpath
+.project
+.settings

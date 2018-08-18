@@ -1,0 +1,25 @@
+
+<div class='items'>
+{foreach((array)$sites as $site)}
+	<div class="item">
+		<div class='title'>
+			<a target="_blank" href="{$site['url']}">{$site['title']}</a>
+		</div>
+		<div class='summ'>
+			{$site['summ']}
+		</div>
+		<div class="info">
+			<?php if(0<(int)$site['is_https']){ $scheme='https://'; }else{ $scheme='http://'; }?>
+			<a href="{$scheme}{$site['host']}" target="_blank"><i class="fa fa-user"></i> {$site['host']}</a>
+			<?php $addtime =\qing\utils\Date::format((int)$site['lasttime']); ?>
+			<span class="lasttime" title="发布时间：{$addtime}">
+				<i class="fa fa-clock-o"></i> {$addtime}
+			</span>
+			<a href="javascript:;"><i class="fa fa-eye"></i> 阅读 (0)</a>
+			<a href="javascript:;"><i class="fa fa-comment"></i> 评论 (0)</a>
+			<a href="{:U('edit','',['id'=>$site['id']])}" target="_blank" style='color:green;'><i class="fa fa-edit"></i> 编辑</a>
+			<a href="{:U('remove','',['id'=>$site['id']])}" style='color:red;'><i class="fa fa-trash"></i> 删除</a>
+		</div>
+	</div>
+{/foreach}
+</div>

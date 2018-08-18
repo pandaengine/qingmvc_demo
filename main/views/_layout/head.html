@@ -1,0 +1,23 @@
+<?php $headtitle=@$GLOBALS['title'];?>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="{:config('keywords')}" />
+<meta name="description" content="{:config('description')}" />
+<title>{if($headtitle>'')}{$headtitle} | {/if}{:config('site_name')}</title>
+
+<link rel="stylesheet" href="{#const('STATIC_PUBLIC')}/bootstrap/3.3.2/bootstrap.min.css"/>
+<link rel="stylesheet" href="{#const('STATIC_PUBLIC')}/font-awesome/4.4.0/css/font-awesome.min.css"/>
+
+<script type="text/javascript" src="{#const('STATIC_PUBLIC')}/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="{#const('STATIC_PUBLIC')}/bootstrap/3.3.2/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="__{STATIC}__/main.css" type="text/css"/>
+
+<script type="text/javascript">
+var __JSTATIC__  ="__{STATIC}__";
+var __JAPP__  	 ="__{APP}__";
+</script>
+
+</head>

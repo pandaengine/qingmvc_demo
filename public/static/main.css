@@ -1,0 +1,301 @@
+body {
+    font-family: "Microsoft YaHei","微软雅黑",Arial,"Micro Hei",SimSun,"宋体",Heiti,"黑体",sans-serif;
+    font-size: 14px;
+}
+*{
+	margin:0;
+	padding:0;	
+}
+a{
+}
+h1, h2, h3, h4, h5, h6{
+	margin:0;
+	padding:0;
+}
+
+ol, ul {
+	margin:0;
+	padding:0;
+}
+ol,ul,ul li{
+    list-style: none;	
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+.display-none{
+	display:none;
+}
+.overflow-ellipsis{
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ng-cloak{
+	display:none;	
+}@media (min-width: 992px){
+	.container {
+	     width: 960px;
+	}
+}
+@media(min-width: 1200px){
+	.container {
+	    width: 960px;
+	}
+}
+.btn{
+	   padding: 6px 30px;
+	    border-radius: 2px;
+}
+.btn.btn-primary{
+	  background-color: #2780E3;
+  border-color: #1872D5;
+}
+.btn.btn-primary:hover,.btn.btn-primary:active{
+	color: #FFF;
+  background-color: #176FD2;
+  border-color: #176FD2;
+}
+
+.form-control{
+    border-radius: 2px;
+}
+
+.modal{
+	z-index: 3000;
+}
+
+
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.pagination>li>a, .pagination>li>span{
+	padding: 4px 16px;
+	margin-bottom: 4px;
+}
+.pagination>li{
+	
+}/**
+滚动条组成
+
+::-webkit-scrollbar 滚动条整体部分
+::-webkit-scrollbar-thumb  滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）
+::-webkit-scrollbar-track  滚动条的轨道（里面装有Thumb）
+::-webkit-scrollbar-button 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。
+::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）
+::-webkit-scrollbar-corner 边角，即两个滚动条的交汇处
+::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+*/
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 12px;
+	height: 12px;
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    border-radius: 0;
+    background-color: #eee;
+}
+ 
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 0;
+    background-color: #999;
+}
+
+#J-alert-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0px;
+	text-align: center;
+	
+    z-index: 9999;
+	font-size: 14px;
+	
+	width: 320px;
+    margin: 0 auto;
+}
+#J-alert-container>.alert{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 2px;
+	
+	margin-bottom: 10px;
+}
+#J-alert-container>.alert:first-child{
+	border-radius: 0px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.navbar .navbar-collapse{
+}
+/*
+*/
+.navbar-my{
+	background-color: #222;
+    border-color: #080808;
+	
+	background-color: #24292e;
+    border-radius: 0;
+    border-bottom-color:rgba(0, 0, 0, 0);
+	border-color: #080808;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a{
+    color: #CCC;
+}
+  
+.items>.item{
+  margin: 0;
+  padding:0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.items>.item>.title{
+	padding-top: 20px;
+    padding-bottom: 10px;	
+}
+.items>.item>.title>a{
+	color: #4f5157;
+	line-height: 32px;
+	font-size: 22px;
+    font-weight: normal;
+    word-break: break-all;
+}
+.items>.item>.summ
+{
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+	word-wrap: break-word;
+}
+
+.items>.item>.info{
+	color: #999;
+	font-size: 12px;
+	margin: 10px 0;
+}
+.items>.item>.info>a,
+.items>.item>.info>span
+{
+	margin-right: 6px;
+}
+.items>.item>.info>a:HOVER,
+.items>.item>.info>a:focus,
+.items>.item>.info>a:active
+{
+	text-decoration: none;
+	color: #E91E63;
+}
+.items>.item>.info>.lasttime{
+}
+
+.-add{
+	max-width: 720px;
+    margin: 0 auto;
+}
+.-add .title{
+    text-align: left;
+    font-size: 28px;
+    font-weight: 100;
+	margin: 10px 0;
+}
+.-add .item{
+	
+}
+.-add .form-control {
+	height:38px;
+}
+.-add textarea.form-control {
+	min-width:100%;
+	max-width:100%;
+	min-height: 80px;
+}
+.-add .item label{
+	margin: 0;
+	padding: 7px 0;
+}
+.-add .btn-submit{
+    margin: 10px 0;
+}
+.-add .item.url>select{
+	width: 96px;
+}
+.-add .item.url>input{
+	
+}
+.-add .item.url-left>select{
+	float: left;
+	border-right: none;
+	border-radius: 2px 0 0 2px;
+}
+.-add .item.url-left>input{
+	width: calc(100% - 96px);
+	border-radius:0 2px 2px 0;
+}
+
+/*clearfix*/
+footer {
+	border-top: 1px solid #eee;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+footer a {
+	color: #666;
+}
+
+footer .foot-left {
+	padding-left: 0px;
+}
+
+footer .foot-links {
+	
+}
+
+footer .foot-links>li {
+	font-weight: bold;
+	font-size: 12px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+footer .foot-links li:first-child {
+	padding-left: 6px;
+}
+
+footer .foot-copyright {
+	margin: 10px 0;
+	color: #666;
+}
+
+footer .foot-right {
+	padding-right: 20px;
+	text-align: right;
+}
+
+footer .foot-logo {
+	font-size: 26px;
+	font-weight: bold;
+	color: #AAA;
+}
+
+footer .foot-logo:HOVER {
+	text-decoration: none;
+	color: #CCC;
+}.main{
+}

@@ -1,0 +1,50 @@
+/*clearfix*/
+footer {
+	border-top: 1px solid #eee;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+footer a {
+	color: #666;
+}
+
+footer .foot-left {
+	padding-left: 0px;
+}
+
+footer .foot-links {
+	
+}
+
+footer .foot-links>li {
+	font-weight: bold;
+	font-size: 12px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+footer .foot-links li:first-child {
+	padding-left: 6px;
+}
+
+footer .foot-copyright {
+	margin: 10px 0;
+	color: #666;
+}
+
+footer .foot-right {
+	padding-right: 20px;
+	text-align: right;
+}
+
+footer .foot-logo {
+	font-size: 26px;
+	font-weight: bold;
+	color: #AAA;
+}
+
+footer .foot-logo:HOVER {
+	text-decoration: none;
+	color: #CCC;
+}

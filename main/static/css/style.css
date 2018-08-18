@@ -1,0 +1,37 @@
+body {
+    font-family: "Microsoft YaHei","微软雅黑",Arial,"Micro Hei",SimSun,"宋体",Heiti,"黑体",sans-serif;
+    font-size: 14px;
+}
+*{
+	margin:0;
+	padding:0;	
+}
+a{
+}
+h1, h2, h3, h4, h5, h6{
+	margin:0;
+	padding:0;
+}
+
+ol, ul {
+	margin:0;
+	padding:0;
+}
+ol,ul,ul li{
+    list-style: none;	
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+.display-none{
+	display:none;
+}
+.overflow-ellipsis{
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ng-cloak{
+	display:none;	
+}

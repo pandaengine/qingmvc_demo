@@ -1,0 +1,69 @@
+{include '../_layout/main'/}
+
+{section('main')}
+<?php
+$editClass='';
+$editTitle='添加';
+if($isEdit){
+	$editClass='-edit';
+	$editTitle='编辑';
+}
+?>
+<div class="box -add {$editClass}">
+	<h1 class="title">{$editTitle}网站</h1>
+	<hr/>
+	<form action="{C:U('','save')}" method="post" class="form-horizontal" id="J-add" onSubmit="Add.submit(this);return false;">
+		<input type="hidden" name="id" value="<?php echo (int)@$site['id'];?>" />
+		<div class="item">
+			<label for="url" class="control-label">网站域名</label>
+		</div>
+		{*
+		<div class="item url url-left">
+			<?php 
+			$options=[['0','http://'],['1','https://']];
+			$select=new \qing\form_control\Select();
+			$select->name('https');
+			$select->options($options);
+			echo $select->render();
+			?>
+			<input type="text" class="form-control" name="url" id="url" placeholder="http://abc.com/c/d （ 包含http:// ）" required value="{@$site['url']}" />
+		</div>
+		*}
+		<div class="item">
+			<input type="text" class="form-control" name="url" id="url" placeholder="http://abc.com/c/d （ 包含http:// ）" {if($isEdit)} disabled {else/} required {/if} value="{@$site['url']}" />
+		</div>
+		<div class="item">
+			<label for="title" class="control-label">网站名称</label>
+		</div>
+		<div class="item">
+			<input type="text" class="form-control" name="title" id="title" placeholder="请输入网站名称" required value="{@$site['title']}" />
+		</div>
+		
+		<div class="item">
+			<label for="summ" class="control-label">网站描述</label>
+		</div>
+		<div class="item">
+			<textarea class="form-control" name="summ" id="summ" placeholder="可选">{@$site['summ']}</textarea>
+		</div>
+		<br/>
+		<div class="item">
+			<button type="submit" class="btn btn-lg btn-primary btn-submit">提交</button>
+		</div>
+	</form>
+</div>
+
+{*
+<script type="text/javascript">
+var test=function(){
+	//if($('[name=url]').val()>''){return;}
+	var time=(new Date()).getTime()+'';
+	time=time.substr(-6);
+	var url =time+'.qingmvc.com';
+	$('[name=url]').val(url);
+	$('[name=title]').val('qingmvc框架 '+time);
+};
+test();
+</script>
+*}
+
+{/section}

@@ -1,0 +1,26 @@
+{
+    "name": "qingmvc/qingmvc_demo",
+    "description": "qingmvc demo 官方案例 ",
+    "keywords": ["qingmvc","framework","qingcms","demo"],
+    "homepage": "http://www.qingmvc.com",
+	"license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "xiaowang",
+            "homepage": "http://www.qingmvc.com",
+            "role": "Developer"
+        }
+    ],
+	"minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+		"qingmvc/qingmvc":"dev-master",
+		"qingmvc/qingtpl":"dev-master",
+		"qingmvc/qdebug":"dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "main\\": "main/"
+        }
+    }
+}

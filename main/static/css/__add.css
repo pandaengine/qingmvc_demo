@@ -1,0 +1,45 @@
+
+.-add{
+	max-width: 720px;
+    margin: 0 auto;
+}
+.-add .title{
+    text-align: left;
+    font-size: 28px;
+    font-weight: 100;
+	margin: 10px 0;
+}
+.-add .item{
+	
+}
+.-add .form-control {
+	height:38px;
+}
+.-add textarea.form-control {
+	min-width:100%;
+	max-width:100%;
+	min-height: 80px;
+}
+.-add .item label{
+	margin: 0;
+	padding: 7px 0;
+}
+.-add .btn-submit{
+    margin: 10px 0;
+}
+.-add .item.url>select{
+	width: 96px;
+}
+.-add .item.url>input{
+	
+}
+.-add .item.url-left>select{
+	float: left;
+	border-right: none;
+	border-radius: 2px 0 0 2px;
+}
+.-add .item.url-left>input{
+	width: calc(100% - 96px);
+	border-radius:0 2px 2px 0;
+}
+

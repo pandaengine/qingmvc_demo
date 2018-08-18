@@ -1,0 +1,25 @@
+{*
+navbar-fixed-top
+navbar-default
+navbar-inverse
+*}
+<nav class="navbar navbar-inverse navbar-my" role="navigation">
+	<div class="container">
+		<!--start 导航栏标题 -->
+		<div class="navbar-header">
+			<!-- 响应式的切换按钮 汉堡按钮-->
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#navbar">
+				<span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand logo" href="__{HOME}__">{:config('short_name')}</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			{include "logined"/}
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="{C:U('add','')}">新增网站</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
